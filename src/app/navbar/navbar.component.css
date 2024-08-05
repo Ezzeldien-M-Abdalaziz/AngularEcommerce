@@ -8,3 +8,8 @@
   text-decoration: none;
   color: black;
 }
+
+.active_route{
+  color: green !important;
+  font-weight: bold;
+}

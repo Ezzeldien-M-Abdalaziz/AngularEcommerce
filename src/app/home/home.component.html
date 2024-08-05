@@ -10,7 +10,7 @@
         </div>
         <div class="product-details">
           <span class="product-catagory">{{product.category}}</span>
-          <h4><a href="">{{product.title}}</a></h4>
+          <h4><a [routerLink]="['/view-product', product.id]">{{product.title}}</a></h4>
           <div class="product-bottom-details">
             <div class="product-price"><small>${{product.price}}</small>{{((product.price - (product.price * product.discountPercentage) / 100).toFixed(2))}}</div>
             <div class="product-links">

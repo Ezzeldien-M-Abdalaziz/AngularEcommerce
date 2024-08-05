@@ -1,0 +1,59 @@
+
+<div class="product-container">
+  <section class="images">
+
+      <div class="thumbnail-img">
+        <img id="main-image" [src]="product.thumbnail" alt="">
+      </div>
+
+      <div class="sub-images">
+      </div>
+
+  </section>
+
+
+<section class="product-details">
+  <div class="product-header">
+       <h1 id="product-title">{{product?.title}}<!--<span class="discount">{{product?.discountPercentage}}</span> --></h1>
+      <p class="description" id="product-description">{{product.description}}</p>
+    </div>
+
+
+    <div class="product-body">
+      <div class="details-container">
+        <p class="rating" id="product-rating">{{product.rating}}</p>
+        <p class="price" id="product-price">{{product.price}}</p>
+
+        <div class="details">
+          <p class="availability" id="product-availability">Availability Status: <span class="low-stock">{{product.availabilityStatus}}</span></p>
+          <p class="shipping" id="product-shipping">Shipping Information: <span>{{product["shippingInformation"]}}</span></p>
+          <p class="warranty" id="product-warranty">Warranty: <span>{{product["warrantyInformation"]}}</span></p>
+          <p class="return-policy" id="product-return-policy">Return Policy: <span>{{product["returnPolicy"]}}</span></p>
+          <p class="sku" id="product-sku">SKU: <span>{{product["sku"]}}</span></p>
+          <p class="weight" id="product-weight">Weight: <span>{{product["weight"]}}</span></p>
+          <p class="dimensions" id="product-dimensions">Dimensions: <span>{{product["dimensions"]}}</span></p>
+      </div>
+        </div>
+
+  </div>
+
+  <div class="add">
+    <button>Add to Cart</button>
+  </div>
+</section>
+
+
+<!-- <section class="reviews-section">
+<h2>Customer Reviews</h2>
+<div id="reviews">
+  <div class="review">
+      <h3>John Doe: <span>(Rating: 2)</span></h3>
+      <p> Very unhappy with my purchase!</p>
+  </div>
+  <div class="review">
+      <h3>Nolan Gonzalez: <span>(Rating: 2)</span></h3>
+      <p>Not as described!</p>
+  </div>
+</div>
+</section> -->
+
